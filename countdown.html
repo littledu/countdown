@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <title>countdown test</title>
+</head>
+<body>
+  
+  <div id="countdown1"></div>
+  <div id="countdown2"></div>
+<script type="text/javascript" src="countdown.js"></script>
+<script>
+  countdown({
+    id: 'countdown1',
+    date: 'December,31,2013,00:00:00',
+    leadingZero: true,
+    htmlTemplate: '使用客户端时间：<i class="day">%{d}天</i><i class="hour">%{h}时</i><i class="minute">%{m}分</i><i class="second">%{s}秒</i>'
+  });
+
+  countdown({
+    id: 'countdown2',
+    date: 'December,31,2013,00:00:00',
+    leadingZero: true,
+    useServerTime: true,
+    htmlTemplate: '使用服务器时间：<i class="day">%{d}天</i><i class="hour">%{h}时</i><i class="minute">%{m}分</i><i class="second">%{s}秒</i>'
+  });
+</script>
+
+
+
+
+
+
+</body>
+</html>
